@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 50%;
+    height: auto;
+}
+
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#skills-title{
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+header, footer{
+    background-color: cadetblue;
+    padding: 25px;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+}
+
+main{
+    text-align: left;
+    background-color: rgb(253, 238, 186);
+    height: 100vh;
+    width: 70%;
+    padding: 5px 10px;
+}
+
+
+
+nav {
+    background-color: rgb(48, 213, 200) ;
+    width: 30%
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 0%;
+    width: 80%;
+    margin: 2% auto;
+    padding: 1%;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: calc(2px + 2vw);
+}
+
+/*below this line is my mobile design*/
+@media screen and (max-width: 1000px) {
+    #container{
+        flex-direction: column;
+    }
+
+
+    header,footer{
+        text-align: center;
+    }
+
+    nav, main {
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+
+}
+
+/* Calculator styling */
+#calculator {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+#input-section {
+    margin: 20px 0;
+}
+
+#input-section label {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#input-section input {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#button-section {
+    display: flex;
+    margin: 20px 0;
+}
+
+#button-section button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+#output-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
