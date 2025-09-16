@@ -83,6 +83,12 @@ nav a{
     nav, main {
         width: 100%;
     }
+
+    main {
+        height: 180vh
+    }
+
+    
     nav ul{
         flex-direction: row;
     }
